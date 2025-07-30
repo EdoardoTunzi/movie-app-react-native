@@ -29,7 +29,7 @@ export default function Index() {
               <Text className="text-lg text-white font-bold mt-5 mb-3">Latest Movies</Text>
 
               <FlatList
-                data={movies?.results || []}
+                data={movies}
                 renderItem={({ item }) => <MovieCard {...item} />}
                 keyExtractor={(item) => item.id.toString()}
                 numColumns={3}
