@@ -42,7 +42,7 @@ const Search = () => {
             <View className="w-full, flex-row justify-center items-center mt-20">
               <Image source={icons.logo} className="w-12 h-10" />
             </View>
-            <View className="my-5">
+            <View className="mt-10">
               <SearchBar placeholder="Search for a movie" value={searchQuery} onChangeText={(text: string) => setSearchQuery(text)} />
             </View>
 
